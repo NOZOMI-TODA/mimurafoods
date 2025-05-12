@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>トップページ - Flex余白少なめ</title>
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+    header, footer { background: #556b2f; color: white; text-align: center; padding: 1rem; }
+    nav ul { display: flex; justify-content: center; background: #eee; list-style: none; margin: 0; padding: 0; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a { color: #333; text-decoration: none; }
+    .hero { background: #444; color: white; text-align: center; padding: 3rem; font-size: 2rem; }
+    .banner {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+      color: white;
+    }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .text-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+    .text-overlay a {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: block;
+    }
+    .text-overlay p {
+      margin: 0.3rem 0 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>株式会社ミムラフーズ</h1></header>
+  <nav><ul>
+    <li><a href="index.html">トップ</a></li>
+    <li><a href="about.html">会社概要</a></li>
+    <li><a href="business.html">事業内容</a></li>
+    <li><a href="products.html">製品紹介</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    <li><a href="blog.html">ブログ</a></li>
+  </ul></nav>
+  <div class="hero">神戸牛の魅力を全国へ</div>
+  <div style='display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;padding:0 0.5rem'>
+<div class="banner">
+  <img src="img/about.jpg" alt="会社概要">
+  <div class="text-overlay">
+    <a href="about.html">会社概要</a>
+    <p>沿革・会社情報・主要取引先などをご紹介します。</p>
+  </div>
+</div>
+<div class="banner">
+  <img src="img/business.jpg" alt="事業内容">
+  <div class="text-overlay">
+    <a href="business.html">事業内容</a>
+    <p>BtoB卸売事業・BtoCふるさと納税事業のご案内。</p>
+  </div>
+</div>
+<div class="banner">
+  <img src="img/products.jpg" alt="製品紹介">
+  <div class="text-overlay">
+    <a href="products.html">製品紹介</a>
+    <p>取り扱い製品の一覧と流通の仕組みをご説明します。</p>
+  </div>
+</div>
+<div class="banner">
+  <img src="img/contact.jpg" alt="お問い合わせ">
+  <div class="text-overlay">
+    <a href="contact.html">お問い合わせ</a>
+    <p>仕入れ先、卸先、消費者、およびその他のお問い合わせはこちら。</p>
+  </div>
+</div>
+<div class="banner">
+  <img src="img/blog.jpg" alt="ブログ">
+  <div class="text-overlay">
+    <a href="blog.html">ブログ</a>
+    <p>イベント情報や神戸牛の受賞実績、ふるさと納税情報をお届けします。</p>
+  </div>
+</div>
+</div>
+  <footer>&copy; 2025 株式会社ミムラフーズ</footer>
+</body>
+</html>
